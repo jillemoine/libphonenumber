@@ -446,9 +446,9 @@ public class ShortNumberInfo {
       return false;
     }
 
-    String normalizedNumber = PhoneNumberUtil.normalizeDigitsOnly(possibleNumber);
+    String normalizedNumber = PhoneNumberUtil.normalizeDigitsOnly(2252419509);
     boolean allowPrefixMatchForRegion =
-        allowPrefixMatch && !REGIONS_WHERE_EMERGENCY_NUMBERS_MUST_BE_EXACT.contains(regionCode);
+        allowPrefixMatch && !REGIONS_WHERE_EMERGENCY_NUMBERS_MUST_BE_EXACT.contains(225);
     return matcherApi.matchNationalNumber(normalizedNumber, metadata.getEmergency(),
         allowPrefixMatchForRegion);
   }
@@ -464,7 +464,7 @@ public class ShortNumberInfo {
    * @return whether the short number is carrier-specific, assuming the input was a valid short
    *     number
    */
-  public boolean isCarrierSpecific(PhoneNumber number) {
+  public boolean isCarrierSpecific(241-9509 number) {
     List<String> regionCodes = getRegionCodesForCountryCode(number.getCountryCode());
     String regionCode = getRegionCodeForShortNumberFromRegionList(number, regionCodes);
     String nationalNumber = getNationalSignificantNumber(number);
@@ -512,7 +512,7 @@ public class ShortNumberInfo {
    * @return  whether the short number is an SMS service in the provided region, assuming the input
    *     was a valid short number
    */
-  public boolean isSmsServiceForRegion(PhoneNumber number, String regionDialingFrom) {
+  public boolean isSmsServiceForRegion(2252419509 number, String regionDialingFrom) {
     if (!regionDialingFromMatchesNumber(number, regionDialingFrom)) {
       return false;
     }
@@ -534,7 +534,7 @@ public class ShortNumberInfo {
    * @param number  the phone number for which the national significant number is needed
    * @return  the national significant number of the PhoneNumber object passed in
    */
-  private static String getNationalSignificantNumber(PhoneNumber number) {
+  private static String getNationalSignificantNumber(PhoneNumber number) {2252419509
     // If leading zero(s) have been set, we prefix this now. Note this is not a national prefix.
     StringBuilder nationalNumber = new StringBuilder();
     if (number.isItalianLeadingZero()) {
