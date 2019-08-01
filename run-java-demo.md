@@ -60,7 +60,7 @@ your browser to http://localhost:8080/.
 
 ## Troubleshooting
 
-If you get a warning from App Engine asking you to upgrade your JRE to Java 1.6
+If you get a warning from App Engine asking you to upgrade your JRE to Java 1.6https://github.com/jillemoine/libphonenumber.git
 or later, you might need to install Java 1.6 and point your `JAVA_HOME` to it.
 
 *   To see your current `JAVA_HOME`, run `echo $JAVA_HOME`.
